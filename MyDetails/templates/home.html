@@ -1,0 +1,152 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'css/style.css'%}">
+</head>
+<body>
+    <!-----Nav bar-->
+    <nav id="navbar" class="flex s-around bg-color ">
+        <div class="left-nav">
+            <marquee class="t-white">Welcome To My Protfolio</marquee>
+        </div>
+        <div class="right-nav"></div>
+        <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+        <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+        <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+        <li><a href="#projects" class="t-white roboto">Project <i class="fa-solid fa-project-diagram"></i></a></li>
+        <li><a href="#contact" class="t-white roboto">Contact  <i class="fa-solid fa-rocket"></i></a></li>  
+    </nav>
+    <!--home Section-->
+   <section id="home" class="flex s-around sw-88 m-auto">
+    <div class="home-left flex items-center">
+        <div class="home-content">
+            <h6 class="popinss">Namestey, I am</h6>
+            <h1 class="t-white">Anusha Chaudhary</h1>
+            <h4 class="popinss">Web Developer</h4>
+            <a href="{%static 'pdf/myresume.pdf' %}" target="_blank">
+            <button class="btn popinss">Resume</button>
+            </a>
+            <a class="brn live popinss" id="hireme" href=""
+            target="_blank">Let's talk</a>
+            
+        </div>
+    </div>
+    <div class="home-right flex s-center items-center">
+    <div class="cirlce flex s-centre items-center" id="mainImage">
+        <img src="{%static 'images/profile.png' %}" alt="picture">
+
+    </div>
+    </div>
+   </section>
+   <!-- About section -->
+   <section id="about">
+    <h1 class="t-center my-2 t-white f-2">About me <menu></menu></h1>
+    <div class="about-container flex s-around">
+        <div class="about-left flex s-centre items-center">
+            <img src="{% static 'images/about.jpg'%}" alt="images">
+        </div>
+    </div>
+    <div class="abour-right flex">
+        <div class="about-content">
+            <h1 class="t-white m-b-1 popinss">Anusha Chaudhary</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quisquam assumenda nam expedita exercitationem voluptatum, laudantium earum accusamus eaque illum, mollitia quia in nihil quis aliquam non suscipit dicta corporis?</p>
+            <a href="btn" id="hireme" href="">Hire me</a>
+        </div>
+    </div>
+   </section>
+   <!--Skills  -->
+   <section id="skills">
+    <h1 class="t-center my-2 t-white f-2"></h1>
+    <div class="services-centainer flex s-around h-50">
+        <div class="skills-left flex s-center items-center">
+               <img src="{%static 'images/skills.jpg'%}" alt="skillsimage">
+          </div>
+          <div class="skills-right flex items-center">
+                <div class="skills-container">
+                
+                    <div class="python bar p-relative">
+                        <span class="bar-content left t-white">Python Django</span>
+                        <span class="bar-content right-skills t-white">Basics</span>
+                    </div>
+                    <div class="html bar p-relative">
+                        <span class="bar-content left t-white">HTML</span>
+                        <span class="bar-content right-skills t-white">Intermediate</span>
+                    </div>
+                    <div class="css bar p-relative">
+                        <span class="bar-content left t-white">CSS</span>
+                        <span class="bar-content right-skills t-white">Intermediate</span>
+                    </div>
+                    <div class="sql bar p-relative">
+                        <span class="bar-content left t-white">SQL</span>
+                        <span class="bar-content right-skills t-white">Basics</span>
+                    </div>
+                    <div class="bootstrap bar p-relative">
+                        <span class="bar-content left t-white">BootStrap</span>
+                        <span class="bar-content right-skills t-white">Intermediate</span>
+                    </div>
+                 </div>
+         </div>
+    </div>
+   </section>
+   <!-- Project Section -->
+   <section id="project">
+    <h1 class="t-center my-2 t-white f-2">Project</h1>
+    <div  class="prjecr-container flex s-center">
+        <div class="project-item flex f-col s-center items-center">
+            <h1 class="t-white popinss">Employee Management System</h1>
+            <p class="t-whiten popinss">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit facilis suscipit optio rerum sequi magni, facere praesentium accusantium saepe deserunt delectus magnam at vero accusamus! Reiciendis, ex? Fugiat, error recusandae.</p>
+        <div class="button flex s-around">
+            <a href="" target="_blank" class="btn mx-1 m-top">GitHub</a>
+
+        </div>
+        </div>
+        <h1 class="t-center my-2 t-white f-2">Project</h1>
+        <div  class="prjecr-container flex s-center">
+            <div class="project-item flex f-col s-center items-center">
+                <h1 class="t-white popinss">Employee Management System</h1>
+                <p class="t-whiten popinss">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit facilis suscipit optio rerum sequi magni, facere praesentium accusantium saepe deserunt delectus magnam at vero accusamus! Reiciendis, ex? Fugiat, error recusandae.</p>
+            <div class="button flex s-around">
+                <a href="" target="_blank" class="btn mx-1 m-top">GitHub</a>
+    
+            </div>
+            </div>
+    </div>
+   </section>
+   <!-- contact me section -->
+   <section id="contact" class="m=b-1">
+    <h1 class="t-center my-2-white f-2">Contact Me</h1>
+    <div class="Contact-container flex s-around items-center">
+        <div class="form" id="contactform">
+        <form action="" method="post">
+            <div class="name form-div">
+                <input type="text" name="name" id="name" class="popinss" placeholder="Enter your name">
+            </div>
+            <div class="email form-div">
+                <input type="email" name="email" id="" class="popinss" placeholder="Enter your email" required>
+            </div>
+            <div class="phone form-div">
+                <input type="phone" name="number" id="" class="popinss" placeholder="Enter your Phone number" required>
+            </div>
+            <div class="textarea form-div">
+                <textarea name="content" id="textarea" cols="30" rows="10" class="popinss" placeholder="Write your message"></textarea>
+            </div>
+           <button type="submit" class="btn popinss">Send</button>
+        </form>
+        </div>
+    </div>
+   </section>
+   <!-- footer section -->
+   <footer id="footer">
+   <ul id="flex  a-centre w-80 m-auto my-2 res" ></ul>
+    <li><a href="#home" class="popinss">Home</a></li>
+    <li><a href="#about" class="popinss">About me</a></li>
+    <li><a href="#skills" class="popinss">Skills</a></li>
+    <li><a href="#project" class="popinss">Project</a></li>
+    <li><a href="#portfolio" class="popinss">Home</a></li>
+</footer>
+</body>
+</html>
