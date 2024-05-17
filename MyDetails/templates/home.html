@@ -37,7 +37,7 @@
     </div>
     <div class="home-right flex s-center items-center">
     <div class="cirlce flex s-centre items-center" id="mainImage">
-        <img src="{%static 'images/profile.png' %}" alt="picture">
+        <img src="{%static 'images/profile.png' %}" alt="picture" style="height: 50vh; width: 40vh;">
 
     </div>
     </div>
@@ -53,7 +53,7 @@
     <div class="abour-right flex">
         <div class="about-content">
             <h1 class="t-white m-b-1 popinss">Anusha Chaudhary</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quisquam assumenda nam expedita exercitationem voluptatum, laudantium earum accusamus eaque illum, mollitia quia in nihil quis aliquam non suscipit dicta corporis?</p>
+            <p class="t-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quisquam assumenda nam expedita exercitationem voluptatum, laudantium earum accusamus eaque illum, mollitia quia in nihil quis aliquam non suscipit dicta corporis?</p>
             <a href="btn" id="hireme" href="">Hire me</a>
         </div>
     </div>
@@ -70,45 +70,49 @@
                 
                     <div class="python bar p-relative">
                         <span class="bar-content left t-white">Python Django</span>
-                        <span class="bar-content right-skills t-white">Basics</span>
+                        <span class="bar-content right-skills t-white">60%</span>
                     </div>
                     <div class="html bar p-relative">
                         <span class="bar-content left t-white">HTML</span>
-                        <span class="bar-content right-skills t-white">Intermediate</span>
+                        <span class="bar-content right-skills t-white">80%</span>
                     </div>
                     <div class="css bar p-relative">
                         <span class="bar-content left t-white">CSS</span>
-                        <span class="bar-content right-skills t-white">Intermediate</span>
+                        <span class="bar-content right-skills t-white">50%</span>
                     </div>
                     <div class="sql bar p-relative">
                         <span class="bar-content left t-white">SQL</span>
-                        <span class="bar-content right-skills t-white">Basics</span>
+                        <span class="bar-content right-skills t-white">40%</span>
                     </div>
                     <div class="bootstrap bar p-relative">
                         <span class="bar-content left t-white">BootStrap</span>
-                        <span class="bar-content right-skills t-white">Intermediate</span>
+                        <span class="bar-content right-skills t-white">50%</span>
+                    </div>
+                    <div class="javascript bar p-relative">
+                        <span class="bar-content left t-white">Javascript</span>
+                        <span class="bar-content right-skills t-white">30%</span>
                     </div>
                  </div>
          </div>
     </div>
    </section>
    <!-- Project Section -->
-   <section id="project">
+   <section id="projects">
     <h1 class="t-center my-2 t-white f-2">Project</h1>
     <div  class="prjecr-container flex s-center">
         <div class="project-item flex f-col s-center items-center">
             <h1 class="t-white popinss">Employee Management System</h1>
-            <p class="t-whiten popinss">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit facilis suscipit optio rerum sequi magni, facere praesentium accusantium saepe deserunt delectus magnam at vero accusamus! Reiciendis, ex? Fugiat, error recusandae.</p>
+            <p class="t-white popinss">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit facilis suscipit optio rerum sequi magni, facere praesentium accusantium saepe deserunt delectus magnam at vero accusamus! Reiciendis, ex? Fugiat, error recusandae.</p>
         <div class="button flex s-around">
             <a href="" target="_blank" class="btn mx-1 m-top">GitHub</a>
 
         </div>
         </div>
-        <h1 class="t-center my-2 t-white f-2">Project</h1>
+        
         <div  class="prjecr-container flex s-center">
             <div class="project-item flex f-col s-center items-center">
                 <h1 class="t-white popinss">Employee Management System</h1>
-                <p class="t-whiten popinss">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit facilis suscipit optio rerum sequi magni, facere praesentium accusantium saepe deserunt delectus magnam at vero accusamus! Reiciendis, ex? Fugiat, error recusandae.</p>
+                <p class="t-white popinss">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit facilis suscipit optio rerum sequi magni, facere praesentium accusantium saepe deserunt delectus magnam at vero accusamus! Reiciendis, ex? Fugiat, error recusandae.</p>
             <div class="button flex s-around">
                 <a href="" target="_blank" class="btn mx-1 m-top">GitHub</a>
     
@@ -122,6 +126,7 @@
     <div class="Contact-container flex s-around items-center">
         <div class="form" id="contactform">
         <form action="" method="post">
+            {% csrf_token %}
             <div class="name form-div">
                 <input type="text" name="name" id="name" class="popinss" placeholder="Enter your name">
             </div>
@@ -141,12 +146,22 @@
    </section>
    <!-- footer section -->
    <footer id="footer">
-   <ul id="flex  a-centre w-80 m-auto my-2 res" ></ul>
+   <ul id="flex  a-centre w-80 m-auto my-2 res" >
     <li><a href="#home" class="popinss">Home</a></li>
     <li><a href="#about" class="popinss">About me</a></li>
     <li><a href="#skills" class="popinss">Skills</a></li>
     <li><a href="#project" class="popinss">Project</a></li>
     <li><a href="#portfolio" class="popinss">Home</a></li>
+    </ul>
+    <ul class="flex s-center w-80 fontawesome">
+        <a href="" target="_blank"></a>
+        <li><i class="fa-brands fa-github"></i></li>
+        <a href="" target="_blank"></a>
+        <li><i class="fa-brands fa-linkedin-in"></i></li>
+        <a href="" target="_blank"></a>
+        <li><i class="fa-brands fa-instagram"></i></li>
+    </ul>
+    <p class="t-center my-2 popinss"> Copy, All Right Reseverd -<span class="copy-white popinss">Error By Hatsimi</span></p>
 </footer>
 </body>
 </html>
